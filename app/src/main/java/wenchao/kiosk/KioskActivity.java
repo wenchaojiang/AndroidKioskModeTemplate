@@ -42,12 +42,12 @@ public class KioskActivity extends Activity {
         DevicePolicyManager myDevicePolicyManager = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
         // get this app package name
         ComponentName mDPM = new ComponentName(this, MyAdmin.class);
-
+        //startLockTask();
         if (myDevicePolicyManager.isDeviceOwnerApp(this.getPackageName())) {
             // get this app package name
             String[] packages = {this.getPackageName()};
             // mDPM is the admin package, and allow the specified packages to lock task
-            myDevicePolicyManager.setLockTaskPackages(mDPM, packages);
+            //myDevicePolicyManager.setLockTaskPackages(mDPM, packages);
             startLockTask();
         } else {
             Toast.makeText(getApplicationContext(),"Not owner", Toast.LENGTH_LONG).show();
