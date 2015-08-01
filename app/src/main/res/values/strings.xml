@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kiosk</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sample_device_admin">test</string>
+    <string name="sample_device_admin_description">Test</string>
+</resources>
